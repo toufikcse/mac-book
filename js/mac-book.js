@@ -126,7 +126,8 @@ document.getElementById('price-delivery').addEventListener('click', function() {
 // apply promo code
 document.getElementById('promo-code').addEventListener('click', function() {
     const inputCode = document.getElementById('input-text');
-    if(inputCode == 'stevekaku') {
+    const inputText = inputCode.value;
+    if(inputText == 'stevekaku') {
         getDiscount();
     }
 });
